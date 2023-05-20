@@ -1,0 +1,12 @@
+@import './base.css';
+
+.title {
+    margin-bottom: 0%;
+    color: var(--color-black);
+    text-align: center;
+    font-size: 300%;
+}
+
+body {
+    margin-bottom: 10%; /* HTMLの最後に50pxの空白を追加 */
+}
