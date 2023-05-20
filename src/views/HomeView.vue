@@ -1,7 +1,7 @@
 <template>
     <h1 class="title">イベント一覧</h1>
 
-    <button v-for="index in Object.keys(Event.event).length" class="event" @click="console.log(index)">
+    <button v-for="index in Object.keys(Event.event).length" class="event" @click="router.push('/watch/' + Event.event[index - 1]['id'])">
         <img src="../assets/bule.png">
         <h2>{{ title[index - 1] }}</h2>
         <div>　開催日時　：{{ date_start[index - 1] }} ～ {{ date_end[index - 1] }}</div>
@@ -11,7 +11,10 @@
 
 <script setup>
 import Event from '../assets/event.json'
+import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
+
+const router = useRouter()
 
 const eventData = Event.event
 const title = ref([])

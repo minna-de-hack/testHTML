@@ -1,5 +1,9 @@
 @import './base.css';
 
+body {
+    margin-bottom: 10%; /* HTMLの最後に50pxの空白を追加 */
+}
+
 .title {
     margin-bottom: 0%;
     color: var(--color-black);
@@ -7,6 +11,31 @@
     font-size: 300%;
 }
 
-body {
-    margin-bottom: 10%; /* HTMLの最後に50pxの空白を追加 */
+#btn_TOP {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 3%;
+    right: 3%;
+
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid cornflowerblue;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: large;
+}
+
+#btn {
+    width: 240px;
+	height: 75px;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid cornflowerblue;
+    border-radius: 8px;
+    margin: 5% auto 1%;
+    cursor: pointer;
+    font-size: 150%;
+    display: block;
 }
